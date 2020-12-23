@@ -1,5 +1,7 @@
 package com.rohitsh.learnarray;
 
+import java.util.Arrays;
+
 public class HeightChecker {
 
     /*
@@ -35,12 +37,27 @@ public class HeightChecker {
 
     public static int heightChecker(int[] heights) {
 
+        // create a duplicate of original array
+        var temp = Arrays.copyOf(heights, heights.length);
 
-        return 0;
+        // sort duplicate array
+        Arrays.sort(temp);
+
+        // counter
+        int count = 0;
+
+        // compare positions where sorted and unsorted heights do not match, count all and return
+        for (int i = 0; i < heights.length; i++) {
+            if(heights[i] != temp[i]) count++;
+        }
+
+        return count;
     }
 
     public static void main(String[] args) {
 
-        int[] heights = new int[] {1,1,4,2,1,3};
+        int[] heights = new int[] {1,2,3,4,5};
+
+        System.out.println(heightChecker(heights));
     }
 }
