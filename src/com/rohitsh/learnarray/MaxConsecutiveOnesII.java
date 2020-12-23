@@ -45,6 +45,34 @@ public class MaxConsecutiveOnesII {
     public static int findMaxConsecutiveOnesSlidingWindow(int[] nums) {
 
         int max = 0;
+        int left = 0;
+        int zeroCount = 0;
+
+        int numOfZeroesInBetween = 1;
+
+        // we will create a window of left and right with max numOfZeroesInBetween
+
+        for (int right = 0; right < nums.length; right++) {
+
+            if(nums[right] == 0) zeroCount++;
+
+            // number of zeroes encounter is greater that 1
+            if(zeroCount > numOfZeroesInBetween){
+
+                // decrease zero count
+                zeroCount--;
+
+                if(nums[left] == 0){
+
+                }
+
+                // move your left by one step
+                left++;
+            }
+
+            // current max ones
+            max = Math.max(max, right - left + 1);
+        }
 
         return max;
     }
