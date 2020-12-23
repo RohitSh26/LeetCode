@@ -21,13 +21,43 @@ public class SortArrayByParity {
 
     public static int[] sortArrayByParity(int[] A) {
 
+        // a result array
+        var Output = new int[A.length];
+
+        // empty checks
         if(A == null || A.length == 0){
             return null;
         }
 
 
+        // take a initial pointer
+        int pointer = 0;
 
-        return A;
+        for (int i = 0; i < A.length; i++) {
+
+            // check if element at index is even
+            if(A[i] % 2 == 0) {
+                // store value at pointer
+                Output[pointer] = A[i];
+
+                // increment pointer
+                pointer++;
+            }
+        }
+
+        // now fill rest of the elements
+        for (int i = 0; i < A.length; i++) {
+            // check if element at index is odd
+            if(A[i] % 2 != 0) {
+                // store value at pointer
+                Output[pointer] = A[i];
+
+                // increment pointer
+                pointer++;
+            }
+        }
+
+        return Output;
     }
 
 
