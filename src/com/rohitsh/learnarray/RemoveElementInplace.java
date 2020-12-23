@@ -1,5 +1,7 @@
 package com.rohitsh.learnarray;
 
+import com.rohitsh.utilities.MyUtilities;
+
 public class RemoveElementInplace {
 
     /*
@@ -23,8 +25,21 @@ public class RemoveElementInplace {
 
     public static int removeElement(int[] nums, int val) {
 
+        // let's take a pointer to store all valid elements
+        int pointer = 0;
 
-        return 0;
+        // run a loop starting at 0
+        for (int i = 0; i < nums.length; i++) {
+
+            // if element at index is not val, we keep that at current pointer position
+            if(nums[i] != val){
+                nums[pointer] = nums[i];
+
+                // increment this pointer
+                pointer++;
+            }
+        }
+        return pointer;
     }
 
 
