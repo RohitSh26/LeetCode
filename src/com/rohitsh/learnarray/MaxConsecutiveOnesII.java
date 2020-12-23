@@ -60,7 +60,7 @@ public class MaxConsecutiveOnesII {
             if(zeroCount > numOfZeroesInBetween){
 
                 // decrease zero count
-                zeroCount--;
+                zeroCount = zeroCount - numOfZeroesInBetween;
 
                 if(nums[left] == 0){
 
