@@ -17,8 +17,10 @@ public class MoveZeroes {
  */
 
     public static void moveZeroes(int[] nums) {
+        // pointer to store non-zero values
         int index = 0;
 
+        // run a loop and add non-zero values at pointer and increment pointer
         for (int i = 0; i < nums.length; i++) {
             if(nums[i] != 0) {
                 nums[index] = nums[i];
@@ -26,6 +28,7 @@ public class MoveZeroes {
             }
         }
 
+        // run a loop from pointer to last index of array and update with zeroes
         for (int i = index; i < nums.length; i++) {
             nums[i] = 0;
         }
