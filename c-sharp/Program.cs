@@ -7,10 +7,11 @@ namespace c_sharp
     {
         static void Main(string[] args)
         {
-            int n = 5;
+            // Fibonacci Recursive and Iterative
+            System.Console.WriteLine(Fibonacci.FibRecursive(n: 5));
+            System.Console.WriteLine(Fibonacci.FibIterative(n: 5));
 
-            var output = Fibonacci.FibIterative(n);
-
+            // 
         }
     }
 }

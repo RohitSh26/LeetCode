@@ -14,16 +14,11 @@ namespace c_sharp.basics
             int b = 1;
             int c = 0;
 
-            for(int i = 0; i < n; i++)
+            for(int i = 1; i < n; i++)
             {
-                if (i == 0 || i == 1) System.Console.WriteLine(i);
-                else
-                {
-                    c = a + b;
-                    System.Console.WriteLine(c);
-                    a = b;
-                    b = c;
-                }
+                c = a + b;
+                a = b;
+                b = c;
   
             }
             return c;
