@@ -14,6 +14,9 @@ namespace c_sharp
 
             // Binary Search
             System.Console.WriteLine(BinarySearch.BinarySearchAlgorithm(nums: new int[] {-1,0,3,5,9,12}, target: 0));
+
+            // Leet code Binary Search - SquareRoot
+            System.Console.WriteLine(SquareRootProblem.SquareRoot(x: 19));
         }
     }
 }
