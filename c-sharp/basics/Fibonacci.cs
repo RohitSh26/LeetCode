@@ -1,4 +1,4 @@
-namespace c_sharp
+namespace c_sharp.basics
 {
     public class Fibonacci
     {
