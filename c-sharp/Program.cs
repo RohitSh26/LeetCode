@@ -34,7 +34,12 @@ namespace c_sharp
                 System.Console.WriteLine("ValidMountainArrayProblem");
                 System.Console.WriteLine(ValidMountainArrayProblem.ValidMountainArray(arr: new int[]{1,3, 2, 1, 0}));
                 System.Console.WriteLine(ValidMountainArrayProblem.ValidMountainArray(arr: new int[]{1,3, 2, 5, 1}));
+                System.Console.WriteLine();
 
+                System.Console.WriteLine("MaxConsecutiveOnesII");
+                System.Console.WriteLine(MaxConsecutiveOnesII.MaxConsecutiveOnes(new int[]{1,0,1,1,0}));
+
+                System.Console.WriteLine();
 
                 // Binary Search
                 System.Console.WriteLine();
@@ -50,10 +55,6 @@ namespace c_sharp
             }
             
             // currently testing 
-
-            
-            
-
 
         }
     }

@@ -18,9 +18,28 @@ namespace c_sharp.arrays
 {
     public class MaxConsecutiveOnesII
     {
-        public static int MaxConsecutiveOnes()
+        public static int MaxConsecutiveOnes(int[] nums)
         {
-            return 0;
+            // lets create a sliding window [left , current index]
+            // when we see zero we will update our window pointer by 1
+            
+            int left = 0, zeroPointer = -1, counter = 0, max = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if(nums[i] == 0)
+                {
+                    if(counter > max) max = counter;
+                    
+                    left = zeroPointer + 1;
+                    zeroPointer = i;
+
+                }
+                counter++;
+            }
+
+
+            return max;
         }
     }
 }
