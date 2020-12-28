@@ -2,6 +2,7 @@
 using c_sharp.basics;
 using c_sharp.binarysearch;
 using c_sharp.arrays;
+using c_sharp.utilities;
 
 namespace c_sharp
 {
@@ -9,7 +10,7 @@ namespace c_sharp
     {
         static void Main(string[] args)
         {
-            bool current = false;
+            bool current = true;
 
             if (!current)
             {
@@ -55,6 +56,7 @@ namespace c_sharp
             }
             
             // currently testing 
+            MyUtilities.PrintArray(MergeSortedArray.Merge(new int[]{1,2,3,0,0,0}, 3, new int[]{4, 5, 6}, 3));
 
         }
     }
