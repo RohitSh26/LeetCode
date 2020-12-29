@@ -55,6 +55,10 @@ namespace c_sharp
                 System.Console.WriteLine(FindNumbersWithEvenNumberOfDigits.FindNumber(new int[] {555,901,482,1771}));
                 System.Console.WriteLine();
 
+                System.Console.WriteLine();
+                System.Console.WriteLine("RemoveElement");
+                MyUtilities.PrintArray(RemoveElement.Remove(nums: new int[]{3, 2, 3, 2}, val: 3));
+                System.Console.WriteLine();
 
                 // Binary Search
                 System.Console.WriteLine();
