@@ -81,12 +81,17 @@ namespace c_sharp
                 ReverseString.Reverse("hello world");
                 System.Console.WriteLine();
 
+                System.Console.WriteLine();
+                System.Console.WriteLine("Reverse String");
+                var charArray = new char[] { 'a', 'b', 'c' };
+                ReverseStringII.Reverse(charArray);
+                MyUtilities.PrintCharArray(charArray);
+                System.Console.WriteLine();
+
             }
             
             // currently testing
-            var charArray = new char[] { 'a', 'b', 'c' };
-            ReverseStringII.Reverse(charArray);
-            MyUtilities.PrintCharArray(charArray);
+            
             
             
 
