@@ -3,6 +3,7 @@ using c_sharp.basics;
 using c_sharp.binarysearch;
 using c_sharp.arrays;
 using c_sharp.utilities;
+using c_sharp.recusrsion;
 
 namespace c_sharp
 {
@@ -69,11 +70,21 @@ namespace c_sharp
                 System.Console.WriteLine();
                 System.Console.WriteLine("SquareRoot");
                 System.Console.WriteLine(SquareRootProblem.SquareRoot(x: 19));
+                System.Console.WriteLine();
+
+
+                // Leetcode Recursion 
+                System.Console.WriteLine("Leetcode Recursion ");
 
                 System.Console.WriteLine();
+                System.Console.WriteLine("Reverse String");
+
+                System.Console.WriteLine();
+
             }
             
             // currently testing
+            ReverseString.Reverse("hello world");
             
             
 
