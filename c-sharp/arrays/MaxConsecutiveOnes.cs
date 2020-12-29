@@ -12,14 +12,31 @@
     The input array will only contain 0 and 1.
     The length of input array is a positive integer and will not exceed 10,000
 */
+using System;
+
 namespace c_sharp.arrays
 {
     public class MaxConsecutiveOnes
     {
         public static int FindMaxConsecutiveOnes(int[] nums)
         {
-            
-            return 0;
+            int max = 0;
+            int count = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if(nums[i] == 1)
+                {
+                    count++;
+                }
+                else
+                {
+                    count = 0;
+                }
+
+                max = Math.Max(max, count);
+            }
+
+            return max;
         }
     }
 }

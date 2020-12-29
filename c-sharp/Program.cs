@@ -41,6 +41,10 @@ namespace c_sharp
                 System.Console.WriteLine(MaxConsecutiveOnesII.MaxConsecutiveOnes(new int[]{1,0,1,1,0}));
 
                 System.Console.WriteLine();
+                System.Console.WriteLine("MergeSortedArray");
+                MyUtilities.PrintArray(MergeSortedArray.Merge(new int[]{1,2,3,0,0,0}, 3, new int[]{4, 5, 6}, 3));
+
+                System.Console.WriteLine();
 
                 // Binary Search
                 System.Console.WriteLine();
@@ -56,7 +60,8 @@ namespace c_sharp
             }
             
             // currently testing 
-            MyUtilities.PrintArray(MergeSortedArray.Merge(new int[]{1,2,3,0,0,0}, 3, new int[]{4, 5, 6}, 3));
+            System.Console.WriteLine(MaxConsecutiveOnes.FindMaxConsecutiveOnes(new int[]{1,1,1,1,1}));
+            ;
 
         }
     }
