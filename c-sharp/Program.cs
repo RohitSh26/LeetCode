@@ -43,8 +43,18 @@ namespace c_sharp
                 System.Console.WriteLine();
                 System.Console.WriteLine("MergeSortedArray");
                 MyUtilities.PrintArray(MergeSortedArray.Merge(new int[]{1,2,3,0,0,0}, 3, new int[]{4, 5, 6}, 3));
+                System.Console.WriteLine();
 
                 System.Console.WriteLine();
+                System.Console.WriteLine("FindMaxConsecutiveOnes");
+                System.Console.WriteLine(MaxConsecutiveOnes.FindMaxConsecutiveOnes(new int[]{1,1,1,1,1}));
+                System.Console.WriteLine();
+
+                System.Console.WriteLine();
+                System.Console.WriteLine("FindNumbersWithEvenNumberOfDigits");
+                System.Console.WriteLine(FindNumbersWithEvenNumberOfDigits.FindNumber(new int[] {555,901,482,1771}));
+                System.Console.WriteLine();
+
 
                 // Binary Search
                 System.Console.WriteLine();
@@ -59,9 +69,9 @@ namespace c_sharp
                 System.Console.WriteLine();
             }
             
-            // currently testing 
-            System.Console.WriteLine(MaxConsecutiveOnes.FindMaxConsecutiveOnes(new int[]{1,1,1,1,1}));
-            ;
+            // currently testing
+            
+            
 
         }
     }
