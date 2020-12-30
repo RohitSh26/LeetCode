@@ -1,15 +1,5 @@
-namespace c_sharp.recusrsion
+namespace c_sharp.recursion
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
     public class SwapNodesInPair
     {
         public static ListNode Swap(ListNode head)

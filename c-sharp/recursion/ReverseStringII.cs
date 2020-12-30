@@ -1,4 +1,4 @@
-namespace c_sharp.recusrsion
+namespace c_sharp.recursion
 {
     public class ReverseStringII
     {
