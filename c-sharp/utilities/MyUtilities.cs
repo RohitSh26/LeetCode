@@ -1,3 +1,5 @@
+using c_sharp.recursion;
+
 namespace c_sharp.utilities
 {
     public class MyUtilities
@@ -21,6 +23,16 @@ namespace c_sharp.utilities
                 count++;
             }
             return count;
+        }
+
+
+        public static void PrintLinkedList(ListNode node)
+        {
+            while(node != null)
+            {
+                System.Console.Write(node.val + " => ");
+                node = node.next;
+            }
         }
 
     }

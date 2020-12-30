@@ -3,7 +3,7 @@ using c_sharp.basics;
 using c_sharp.binarysearch;
 using c_sharp.arrays;
 using c_sharp.utilities;
-using c_sharp.recusrsion;
+using c_sharp.recursion;
 
 namespace c_sharp
 {
@@ -88,9 +88,24 @@ namespace c_sharp
                 MyUtilities.PrintCharArray(charArray);
                 System.Console.WriteLine();
 
+                System.Console.WriteLine();
+                System.Console.WriteLine("ReverseLinkedList");
+                LinkedList list = new LinkedList();
+                list.head = new ListNode(1);
+                list.head.next = new ListNode(2);
+                list.head.next.next = new ListNode(3);
+
+                // print list before change
+                System.Console.WriteLine("print list before change");
+                MyUtilities.PrintLinkedList(list.head);
+                System.Console.WriteLine();
+                System.Console.WriteLine("print list after change");
+                MyUtilities.PrintLinkedList(ReverseLinkedList.Reverse(list.head));
+
             }
             
             // currently testing
+
             
             
             
