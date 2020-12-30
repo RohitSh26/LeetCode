@@ -1,3 +1,5 @@
+using c_sharp.utilities;
+
 namespace c_sharp.recursion
 {
     public class ReverseLinkedList
@@ -23,6 +25,35 @@ namespace c_sharp.recursion
             }
 
             return prev;
+        }
+
+
+        public static ListNode ReverseListRecursive(ListNode head)
+        {
+
+            ListNode prev = null;
+            return helper(head, prev);
+        }
+
+        private static ListNode helper(ListNode head, ListNode prev)
+        {
+
+            if (head == null) return prev;
+
+            // store next node
+            var temp = head.next;
+
+            // set current head to previous
+            head.next = prev;
+
+            // set head to temp
+            prev = head;
+
+            // set head to next node
+            head = temp;
+
+            return helper(head, prev);
+
         }
     }
 }

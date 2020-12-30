@@ -1,5 +1,7 @@
 package com.rohitsh.recursion;
 
+import java.util.IllegalFormatCodePointException;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -34,4 +36,32 @@ public class ReverseLinkedList {
 
         return prev;
     }
+
+    public ListNode reverseListRecursive(ListNode head){
+
+        ListNode prev = null;
+        return helper(head, prev);
+    }
+
+    private ListNode helper(ListNode head, ListNode prev){
+
+        if (head == null) return prev;
+
+        // store next node
+        var temp = head.next;
+
+        // set current head to previous
+        head.next = prev;
+
+        // set head to temp
+        prev = head;
+
+        // set head to next node
+        head = temp;
+
+        return helper(head, prev);
+
+    }
+
+
 }

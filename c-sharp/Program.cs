@@ -101,6 +101,12 @@ namespace c_sharp
                 System.Console.WriteLine();
                 System.Console.WriteLine("print list after change");
                 MyUtilities.PrintLinkedList(ReverseLinkedList.Reverse(list.head));
+                System.Console.WriteLine();
+
+                System.Console.WriteLine();
+                System.Console.WriteLine("ReverseListRecursive");
+                MyUtilities.PrintLinkedList(ReverseLinkedList.ReverseListRecursive(list.head));
+                System.Console.WriteLine();
 
             }
             
@@ -108,8 +114,8 @@ namespace c_sharp
 
             
             
-            
 
+            
         }
     }
 }
