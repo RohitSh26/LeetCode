@@ -124,11 +124,15 @@ namespace c_sharp
 
                 // Memoization
 
+                System.Console.WriteLine();
+                System.Console.WriteLine("Fibonacci Memo");
+                System.Console.WriteLine(FibonacciMemo.Fib(20));
+                System.Console.WriteLine();
 
             }
             
             // currently testing
-            System.Console.WriteLine(FibonacciMemo.Fib(20));
+            System.Console.WriteLine(Powxn.Pow(x: 2.0000, n: 2));
 
         }
     }
