@@ -4,6 +4,7 @@ using c_sharp.binarysearch;
 using c_sharp.arrays;
 using c_sharp.utilities;
 using c_sharp.recursion;
+using c_sharp.recursion.memoization;
 
 namespace c_sharp
 {
@@ -108,22 +109,26 @@ namespace c_sharp
                 MyUtilities.PrintLinkedList(ReverseLinkedList.ReverseListRecursive(list.head));
                 System.Console.WriteLine();
 
+                System.Console.WriteLine();
+                System.Console.WriteLine("SearchInABinarySearchTreeSolution");
+                Tree tree = new Tree();
+                tree.root = new TreeNode(4);
+                tree.root.left = new TreeNode(2);
+                tree.root.right = new TreeNode(7);
+                tree.root.right = new TreeNode(1);
+                tree.root.right = new TreeNode(3);
+
+                var treeNode  = SearchInABinarySearchTreeSolution.SearchBST(tree.root, 2);
+                TreeNode.print2DUtil(treeNode, TreeNode.COUNT);
+                System.Console.WriteLine();
+
+                // Memoization
+
+
             }
             
             // currently testing
-            Tree tree = new Tree();
-            tree.root = new TreeNode(4);
-            tree.root.left = new TreeNode(2);
-            tree.root.right = new TreeNode(7);
-            tree.root.right = new TreeNode(1);
-            tree.root.right = new TreeNode(3);
-
-            var treeNode  = SearchInABinarySearchTreeSolution.SearchBST(tree.root, 2);
-
-            TreeNode.print2DUtil(treeNode, TreeNode.COUNT);
-            
-            
-
+            System.Console.WriteLine(FibonacciMemo.Fib(20));
 
         }
     }
