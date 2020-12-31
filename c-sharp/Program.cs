@@ -111,11 +111,20 @@ namespace c_sharp
             }
             
             // currently testing
+            Tree tree = new Tree();
+            tree.root = new TreeNode(4);
+            tree.root.left = new TreeNode(2);
+            tree.root.right = new TreeNode(7);
+            tree.root.right = new TreeNode(1);
+            tree.root.right = new TreeNode(3);
 
+            var treeNode  = SearchInABinarySearchTreeSolution.SearchBST(tree.root, 2);
+
+            TreeNode.print2DUtil(treeNode, TreeNode.COUNT);
             
             
 
-            
+
         }
     }
 }

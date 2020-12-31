@@ -1,5 +1,7 @@
 package com.rohitsh.utilities;
 
+import com.rohitsh.recursion.TreeNode;
+
 public class MyUtilities {
 
     public static void printArray(int arr[])
@@ -7,5 +9,6 @@ public class MyUtilities {
         for (int i=0; i < arr.length; i++)
             System.out.print(arr[i]+" ");
     }
+
 
 }
