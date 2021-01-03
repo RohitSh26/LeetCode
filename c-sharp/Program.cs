@@ -128,11 +128,36 @@ namespace c_sharp
                 System.Console.WriteLine("Fibonacci Memo");
                 System.Console.WriteLine(FibonacciMemo.Fib(20));
                 System.Console.WriteLine();
+            
+                System.Console.WriteLine();
+                System.Console.WriteLine("Pow(x, n");
+                System.Console.WriteLine(Powxn.Pow(x: 2.0000, n: 2));
+                System.Console.WriteLine();
+
+
+                System.Console.WriteLine();
+                System.Console.WriteLine("Merge Two Sorted Linked List");
+                LinkedList list1 = new LinkedList();
+                list1.head = new ListNode(1);
+                list1.head.next = new ListNode(2);
+                list1.head.next.next = new ListNode(4);
+
+                LinkedList list2 = new LinkedList();
+                list2.head = new ListNode(1);
+                list2.head.next = new ListNode(3);
+                list2.head.next.next = new ListNode(4);
+
+                ListNode output = MergeTwoSortedLinkedList.MergeSortedLists(list1.head, list2.head);
+                MyUtilities.PrintLinkedList(output);
+
+                System.Console.WriteLine();
 
             }
             
             // currently testing
-            System.Console.WriteLine(Powxn.Pow(x: 2.0000, n: 2));
+
+
+            
 
         }
     }
